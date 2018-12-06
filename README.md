@@ -1,4 +1,4 @@
-# github-pages
+# Github Pages test
 
 ## Project setup
 ```

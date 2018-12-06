@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+      <router-view title="Schedule My Jobs"/>
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 export default {
-  name: 'app',
+  name: "App",
   components: {
-    HelloWorld
+    Header,
+    Footer
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .display-flex {
+    display: flex;
+  }
+  .flex-direction-column {
+     flex-direction: column;
+  }
+  .flex-direction-row {
+     flex-direction: row;
+  }
+  .flex-justify-space-around {
+    justify-content: space-around;
+  }
+  .flexbox-center {
+    justify-content: center;
+    align-items: center;
+  }
 </style>
